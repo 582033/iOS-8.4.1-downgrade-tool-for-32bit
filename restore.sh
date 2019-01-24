@@ -1,6 +1,6 @@
 #!/bin/bash
 echo This tool is in beta. 100% functionality is not guaranteed.
-
+sleep 1
 echo Make sure your device is in kDFU mode
 echo you can do this on most devices using an app in Cydia repo: repo.tihmstar.net
 sleep 3
