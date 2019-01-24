@@ -1,7 +1,7 @@
 # iOS-8.4.1-downgrade-tool-for-32bit
 
 ## Information on this tool
-This tool is in beta right now and only supports the iPad2,1 (K93AP), iPad2,5 (P105AP), iPhone4,1 (N94AP).
+This tool is in beta right now and only supports the iPad2,1 (K93AP), iPad2,2 (K94AP), iPad2,5 (P105AP), iPhone4,1 (N94AP), iPhone5,1 (N94AP), iPad3,1 (J1AP).
 This tool is to automate OTA downgrades to iOS 8.4.1 using Odysseus.
 
 ## Usage
