@@ -14,3 +14,10 @@ To restore the device with the custom Odysseus ipsw type
 ```
 ./restore.sh
 ```
+## Credits
+```
+@Nalu_Tech for the tool
+@QuilviaTech for iPad 2 GSM, iPhone 5 GSM, iPad 3 support
+@alitek123 and @Trsvsr for idevicererestore
+@Xerub for Odysseus
+```
