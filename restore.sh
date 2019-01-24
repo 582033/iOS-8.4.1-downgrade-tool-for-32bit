@@ -17,18 +17,34 @@ do
             ;;
         "iPad 2 GSM")
             echo Restoring iPad2,2 please wait...
-            		./tools/idevicerestore -e -o Tools/Manifests/K94AP.plist iPad2,2_8.4.1_12H321_Odysseus.ipsw
-            		break
+            ### get shsh
+            if [ -e "iPad2,2_8.4.1_12H321_Restore.ipsw" ]; then
+                echo "getting shsh..."
+                ECID="$((./tools/idevicerestore -o Tools/Manifests/K94AP.plist -t iPad2,2_8.4.1_12H321_Restore.ipsw) | sed -n -e 's/^.*Found ECID //p')"
+                mv -v shsh/$ECID-iPad2,2-8.4.1.shsh shsh/$ECID-iPad2,2-8.4.1-12H321.shsh
+            else
+                echo "iPad2,2_8.4.1_12H321_Restore.ipsw does not exist"
+            fi
+            ./tools/idevicererestore -r iPad2,2_8.4.1_12H321_Odysseus.ipsw 
+            break
             ;;
         "iPad 3 WiFi")
             echo Restoring iPad3,1 please wait...
             		./tools/idevicerestore -e -o Tools/Manifests/J1AP.plist iPad3,1_8.4.1_12H321_Odysseus.ipsw
             		break
             ;;
-        "iPhone 4S")
+         "iPhone 4S")
             echo Restoring iPhone4,1 please wait...
-			./tools/idevicerestore -e -o Tools/Manifests/N94AP.plist iPhone4,1_8.4.1_12H321_Odysseus.ipsw 
-			break
+            ### get shsh
+            if [ -e "iPhone4,1_8.4.1_12H321_Restore.ipsw" ]; then
+                echo "getting shsh..."
+                ECID="$((./tools/idevicerestore -o Tools/Manifests/N94AP.plist -t iPhone4,1_8.4.1_12H321_Restore.ipsw) | sed -n -e 's/^.*Found ECID //p')"
+                mv -v shsh/$ECID-iPhone4,1-8.4.1.shsh shsh/$ECID-iPhone4,1-8.4.1-12H321.shsh
+            else
+                echo "iPhone4,1_8.4.1_12H321_Restore.ipsw does not exist"
+            fi
+            ./tools/idevicererestore -r iPhone4,1_8.4.1_12H321_Odysseus.ipsw 
+            break
             ;;
         "iPad Mini WiFi")
             echo Restoring iPad2,5 please wait...
@@ -37,8 +53,16 @@ do
             ;;
         "iPhone 5 GSM")
             echo Restoring iPhone5,1 please wait...
-            		./tools/idevicerestore -e -o Tools/Manifests/N41AP.plist iPhone5,1_8.4.1_12H321_Odysseus.ipsw
-            		break
+            ### get shsh
+            if [ -e "iPhone5,1_8.4.1_12H321_Restore.ipsw" ]; then
+                echo "getting shsh..."
+                ECID="$((./tools/idevicerestore -o Tools/Manifests/N41AP.plist -t iPhone5,1_8.4.1_12H321_Restore.ipsw) | sed -n -e 's/^.*Found ECID //p')"
+                mv -v shsh/$ECID-iPhone5,1-8.4.1.shsh shsh/$ECID-iPhone5,1-8.4.1-12H321.shsh
+            else
+                echo "iPhone5,1_8.4.1_12H321_Restore.ipsw does not exist"
+            fi
+            ./tools/idevicererestore -r iPhone5,1_8.4.1_12H321_Odysseus.ipsw 
+            break
             ;;
         "Quit")
             		break
