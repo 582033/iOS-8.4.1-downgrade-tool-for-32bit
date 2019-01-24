@@ -2,7 +2,8 @@
 
 ## Information on this tool
 This tool is in beta right now and only supports the iPad2,1 (K93AP), iPad2,2 (K94AP), iPad2,5 (P105AP), iPhone4,1 (N94AP), iPhone5,1 (N94AP), iPad3,1 (J1AP).
-This tool is to automate OTA downgrades to iOS 8.4.1 using Odysseus.
+This tool is to automate OTA downgrades to iOS 8.4.1 using Odysseus. 
+There's a 0% chance of iPhone 5C support unless Apple decides to resign iOS 8.4.1 OTA on iPhone5,3 and iPhone5,4!
 
 ## Usage
 To build a custom Odysseus ipsw for OTA downgrades to 8.4.1 type
