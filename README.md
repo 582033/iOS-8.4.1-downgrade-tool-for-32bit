@@ -20,5 +20,5 @@ To restore the device with the custom Odysseus ipsw type
 @QuilviaTech for iPad 2 GSM, iPhone 5 GSM, iPad 3 support
 @alitek123 and @Trsvsr for idevicererestore
 @xerub and @daytonhasty for Odysseus
-@apple for OTA signing 8.4.1 and providing OTA bundles
+@apple for OTA signing 8.4.1 and providing OTA manifests
 ```
