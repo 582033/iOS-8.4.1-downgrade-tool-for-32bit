@@ -22,5 +22,5 @@ sleep 1
 echo 1...
 sleep 1
 echo deleting files
-rm -rf version.xml *.ipsw iP*
+rm -rf version.xml *.ipsw iP* shsh
 echo Done!
