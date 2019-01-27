@@ -22,5 +22,5 @@ sleep 1
 echo 1...
 sleep 1
 echo deleting files
-rm -rf version.xml *.ipsw iP* shsh
+rm -rf version.xml *.ipsw iP* shsh version.xml BuildManifest_New.plist
 echo Done!
