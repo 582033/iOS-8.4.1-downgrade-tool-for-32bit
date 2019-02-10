@@ -7,7 +7,7 @@ echo chose a device
 
 ## set device ##
 PS3='Please enter your choice: '
-options=("iPad 2 WiFi" "iPad 2 GSM" "iPad 3 WiFi" "iPhone 4S" "iPad Mini WiFi" "iPhone 5 GSM" "Quit")
+options=("iPad 2 WiFi" "iPad 2 GSM" "iPad 3 WiFi" "iPhone 4S" "iPad Mini WiFi" "iPhone 5 GSM" "iPhone 5 Global" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -47,6 +47,12 @@ do
             		echo ipsw creation complete
            		break
             ;;
+        "iPhone 5 Global")
+            echo building ipsw for iPhone5,2 please wait...
+                ./Tools/ipsw iPhone5,2_8.4.1_12H321_Restore.ipsw iPhone5,1_8.4.1_12H321_Odysseus.ipsw --memory -bbupdate --ota Tools/Manifests/N42AP.plist
+                echo ipsw creation complete
+            break
+        ;;
         "Quit")
             break
             ;;

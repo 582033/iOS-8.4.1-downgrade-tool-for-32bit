@@ -6,7 +6,7 @@ echo you can do this on most devices using an app in Cydia repo: repo.tihmstar.n
 sleep 3
 ## set device ##
 PS3='Please enter your choice: '
-options=("iPad 2 WiFi" "iPad 2 GSM" "iPad 3 WiFi" "iPhone 4S" "iPad Mini WiFi" "iPhone 5 GSM" "Quit")
+options=("iPad 2 WiFi" "iPad 2 GSM" "iPad 3 WiFi" "iPhone 4S" "iPad Mini WiFi" "iPhone 5 GSM" "iPhone 5 Global" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -62,6 +62,19 @@ do
                 echo "iPhone5,1_8.4.1_12H321_Restore.ipsw does not exist"
             fi
             ./tools/idevicererestore -r iPhone5,1_8.4.1_12H321_Odysseus.ipsw 
+            break
+            ;;
+        "iPhone 5 Global")
+            echo Restoring iPhone5,2 please wait...
+            ### get shsh
+            if [ -e "iPhone5,2_8.4.1_12H321_Restore.ipsw" ]; then
+                echo "getting shsh..."
+                ECID="$((./tools/idevicerestore -o Tools/Manifests/N42AP.plist -t iPhone5,2_8.4.1_12H321_Restore.ipsw) | sed -n -e 's/^.*Found ECID //p')"
+                mv -v shsh/$ECID-iPhone5,2-8.4.1.shsh shsh/$ECID-iPhone5,2-8.4.1-12H321.shsh
+            else
+                echo "iPhone5,2_8.4.1_12H321_Restore.ipsw does not exist"
+            fi
+            ./tools/idevicererestore -r iPhone5,1_8.4.1_12H321_Odysseus.ipsw
             break
             ;;
         "Quit")
