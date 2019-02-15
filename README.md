@@ -14,6 +14,10 @@ To restore the device with the custom Odysseus ipsw type
 ```
 ./restore.sh
 ```
+Notes:
+```
+Sometimes it can take over 20 minutes to send baseband data on iPhones
+```
 ## Credits
 ```
 @Nalu_Tech for the tool
