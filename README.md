@@ -17,6 +17,7 @@ To restore the device with the custom Odysseus ipsw type
 Notes:
 ```
 Sometimes it can take over 20 minutes to send baseband data on iPhones
+Beta release: Was tested but still I wouldn't expect things to be perfect (most of the time when it fails it's the tools themselves)
 ```
 ## Credits
 ```
