@@ -74,7 +74,7 @@ do
             else
                 echo "iPhone5,2_8.4.1_12H321_Restore.ipsw does not exist"
             fi
-            ./tools/idevicererestore -r iPhone5,1_8.4.1_12H321_Odysseus.ipsw
+            ./tools/idevicererestore -r iPhone5,1_8.4.2_12H321_Odysseus.ipsw
             break
             ;;
         "Quit")
