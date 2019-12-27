@@ -21,7 +21,7 @@ Beta release: Was tested but still I wouldn't expect things to be perfect (most 
 ```
 ## Credits
 ```
-@Nalu_Tech for the tool
+@devfusediboot for the tool
 @QuilviaTech for iPad 2 GSM, iPhone 5 GSM, iPad 3 support
 @alitek123 and @Trsvsr for idevicererestore
 @xerub and @daytonhasty for Odysseus
